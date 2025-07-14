@@ -3,6 +3,6 @@
   hosts: all
   tasks:
     - name: printing op
-      shell: uptime
+      command: uptime
       register: upt
     - debug: var=upt.stdout
